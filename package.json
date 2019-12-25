@@ -20,7 +20,7 @@
   "files": [
     "dist/**"
   ],
-  "author": "Diego Romero",
+  "author": "Diego Romero <jd@nihl.dev>",
   "repository": "git@github.com:nihldev/<lib>.git",
   "license": "BSD-3-Clause",
   "dependencies": {},
