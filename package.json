@@ -1,0 +1,54 @@
+{
+  "name": "@nihldev/<lib>",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "npm run test:lint && npm run test:check-types && npm run test:jest",
+    "test:jest": "jest --silent",
+    "test:lint": "prettier -c src/*.ts",
+    "test:check-types": "tsc --noEmit",
+    "build": "npm run build:source && npm run build:declarations",
+    "build:source": "babel src --out-dir dist --extensions '.ts, .tsx, .js, .jsx'",
+    "build:declarations": "tsc --emitDeclarationOnly"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "author": "Diego Romero <jd@nihl.dev>",
+  "repository": "git@github.com:nihldev/<lib>.git",
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-typescript": "latest",
+    "@inkatze/eslint-config": "latest",
+    "@types/bluebird": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-css-modules": "latest",
+    "eslint-plugin-html": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-json": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-standard": "latest",
+    "jest": "latest",
+    "prettier": "latest",
+    "ts-jest": "latest",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@inkatze/eslint-config"
+  ]
+}
