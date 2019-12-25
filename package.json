@@ -21,7 +21,7 @@
     "dist/**"
   ],
   "author": "Diego Romero",
-  "repository": "git@github.com:nihldev/<library-name>.git",
+  "repository": "git@github.com:nihldev/<lib>.git",
   "license": "BSD-3-Clause",
   "dependencies": {},
   "devDependencies": {
